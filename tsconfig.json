@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, //타입 + 자바스크립트 혼용
+    "skipLibCheck": true, //node_modules 타입 체크
+    "strict": true, //엄격한 타입
+    "forceConsistentCasingInFileNames": true, //파일명 대소문자 구분 무시할것인지
+    "noEmit": true, //파일생성
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext", //import-module 방식 / require()-commonjs 방식
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
